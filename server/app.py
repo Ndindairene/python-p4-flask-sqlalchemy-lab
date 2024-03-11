@@ -19,7 +19,15 @@ def home():
 
 @app.route('/animal/<int:id>')
 def animal_by_id(id):
-    return ''
+    return '<ul>' + \
+    '<li>ID: {}</li>'.format(id) + \
+    '<li>Name: {}</li>'.format(id) + \
+    '<li>Species: {}</li>'.format(id) + \
+    '<li>Zookeeper: {}</li>'.format(id) + \
+    '<li>Enclosure: {}</li>'.format(id) + \
+    '</ul>'
+
+
 
 @app.route('/zookeeper/<int:id>')
 def zookeeper_by_id(id):
